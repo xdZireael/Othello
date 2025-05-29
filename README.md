@@ -79,6 +79,6 @@ For additional PyGObject setup information, visit: https://pygobject.gnome.org/g
 ## Colaborators
 
 [Matis Duval](https://github.com/xdZireael) - Performance optimisation and CLI
-[Gabriel Tardiou]() - Report and code structure
+[Gabriel Tardiou](https://github.com/Louksi) - Report and code structure
 [Remy Heuret](https://github.com/Gostrick) - AI
 [Lucas Marques](https://github.com/IkeYeek) - GUI and bitboard structure implementation
