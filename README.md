@@ -37,7 +37,7 @@ sudo zypper install python3-gobject python3-gobject-Gdk typelib-1_0-Gtk-4_0 libg
 
 1. Clone the repository:
 ```bash
-git clone git@gitlab.emi.u-bordeaux.fr:pdp-2025/othello-1.git
+git clone https://github.com/xdZireael/Othello
 ```
 
 2. Navigate to the project directory:
