@@ -1,0 +1,13 @@
+# this .gitignore uses the best practice described in this article: https://rgbcu.be/blog/gitignore/
+*
+
+!.gitignore
+!.gitlab-ci.yml
+!.pre-commit-config.yaml
+
+!README.md
+
+!othello/
+!specs/
+!reports/
+!docs/

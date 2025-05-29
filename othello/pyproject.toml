@@ -1,0 +1,49 @@
+[project]
+name = "othello"
+description = "A great Othello Game"
+requires-python = ">=3.7"
+authors = [
+    {name = "Matis Duval"},
+    {name = "Rémy Heuret"},
+    {name = "Lucas Marques"},
+    {name = "Gabriel Tardiou"}
+]
+readme = "README.md"
+dependencies = ["pycairo", "PyGObject==3.50.0", "importlib-metadata",
+                "sphinx", "sphinx_rtd_theme",
+                "pytest", "pytest-cov", "coverage", "autopep8", "pre-commit", "pandas", "matplotlib",
+                "seaborn", "plotly", "pylint", "pathlib"]
+dynamic = ["version"]
+
+[project.scripts]
+othello = "othello.__main__:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "othello.__version__"}
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+    "--cov=othello",
+    "--cov-report=html",
+    "--cov-report=term",
+    "--cov-branch",
+    "--ignore=tests/test_gui.py"
+]
+testpaths = [
+    "tests",
+]
+[tool.pylint]
+disable = [
+    "C0199",
+    "C0305"
+]
+
+[tool.coverage.run]
+omit = [
+  "othello/gui.py"
+]

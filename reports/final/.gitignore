@@ -1,0 +1,11 @@
+*
+
+!.gitignore
+
+!report.tex
+!bibliography.bib
+!images
+!images/*
+!images/*.jpg
+!images/*.jpeg
+!images/*.png

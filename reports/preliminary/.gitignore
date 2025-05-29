@@ -1,0 +1,11 @@
+*
+
+!.gitignore
+
+!Othello-Python.pdf
+!report.tex
+!images
+!images/*
+!images/*.jpg
+!images/*.jpeg
+!images/*.png
